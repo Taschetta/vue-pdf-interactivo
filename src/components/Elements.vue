@@ -13,6 +13,7 @@
         <div 
             class="details" 
             v-show="showDetails"
+            @click="elementSelected(details)"
             :style="{ 
                 top: `${details.top}%`, 
                 left: `${details.left}%`
@@ -57,6 +58,11 @@ export default {
                 this.showDetails = true
 
             }
+        }
+    },
+    watch: {
+        elements() {
+            this.showDetails = false
         }
     }
 }
