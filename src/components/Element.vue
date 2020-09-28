@@ -26,7 +26,7 @@ export default {
 
 	position: absolute;
 
-	background-color: yellow;
+	background-color: rgba(255, 255, 0, 0.75);
 	border-radius: 25px;
 
 }
