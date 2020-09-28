@@ -65,9 +65,6 @@ export default {
 <style scoped>
 
 .details {
-	/* width: 200px; */
-	/* height: 200px; */
-
     max-width: 200px;
     height: min-content;
 

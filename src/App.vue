@@ -78,7 +78,6 @@ export default {
 <style>
 
 .container {
-	background-color: red;
 	position: relative;
 	
 	width: max-content;
