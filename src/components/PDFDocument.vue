@@ -48,6 +48,9 @@ export default {
 	},
 	methods: {
 		loadPDF() {
+			if(this.url == null || this.url == "")
+				return
+
 			import('pdfjs-dist/webpack').then(pdfjs => {
 				pdfjs
 					.getDocument(this.url)
@@ -83,7 +86,7 @@ export default {
 <style scoped>
 
 .canvas {
-	border: 2px solid black;
+	border: 2px dotted black;
 	display: block;
 	/* margin: auto; */
 }
